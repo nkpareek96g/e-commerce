@@ -62,6 +62,7 @@ export default function ProductsPage() {
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Products</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {products?.length<=0&&<h1>Since the project is hosted on free tiers of Vercel and Render, the product list may take some time to load initially. Thank you for your patience.</h1>}
         {products.map(product => (
           <div key={product.id} className="border p-4 rounded-lg">
             <h2 className="text-xl font-semibold">{product.name}</h2>
