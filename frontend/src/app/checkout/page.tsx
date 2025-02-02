@@ -21,7 +21,7 @@ export default function Checkout() {
         quantity: item.quantity
       }));
 //http://localhost:3001
-      await axios.post('https://e-commerce-application-uuca.onrender.com/api/products/checkout', { items });
+      await axios.post('https://e-commerce-application-uuca.onrender.com/api/orders/checkout', { items });
       
       dispatch({ type: 'CLEAR_CART' });
       router.push('/checkout/success');
