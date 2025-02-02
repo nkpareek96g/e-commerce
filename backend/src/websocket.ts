@@ -7,7 +7,7 @@ let io: Server;
 export const initializeWebSocket = (server: HttpServer): void => {
   io = new Server(server, {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://commerce-six-zeta-73.vercel.app",
       methods: ["GET", "POST"]
     }
   });
